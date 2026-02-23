@@ -1,0 +1,18 @@
+{
+  "model_path": "mlr_emission_model.joblib",
+  "scaler_path": "mlr_emission_scaler.joblib",
+  "encoder_path": "mlr_emission_encoder.joblib",
+  "feature_info_path": "mlr_feature_info.joblib",
+  "fallback_enabled": true,
+  "fallback_method": "static",
+  "auto_reload": false,
+  "reload_check_interval": 300,
+  "log_level": "INFO",
+  "validate_on_load": true,
+  "min_distance_km": 0.1,
+  "max_distance_km": 10000.0,
+  "min_speed_kmh": 5.0,
+  "max_speed_kmh": 200.0,
+  "min_fuel_consumption": 1.0,
+  "max_fuel_consumption": 200.0
+}

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Flask
+instance/
+.webassets-cache
+
+# Testing
+.pytest_cache/
+.hypothesis/
+.benchmarks/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Model files (optional - uncomment if you want to exclude large model files)
+# *.joblib
+
+# Zip files
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Charts (generated files)
+*_chart.png
