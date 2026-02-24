@@ -39,3 +39,20 @@ Thumbs.db
 
 # Charts (generated files)
 *_chart.png
+*.png
+
+# Backup and archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Example and demo files
+example_*.py
+demo_*.py
+run_*.py
+*_demo.py
+quick_test.py
+simple_test.py
+
+# Test files in root (should be in tests/)
+test_*.py
