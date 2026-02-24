@@ -81,11 +81,6 @@ Buka browser di `http://localhost:5000`
 │   ├── fuel_model.joblib
 │   └── fuel_scaler.joblib
 ├── tests/                       # Unit tests
-├── docs/                        # Documentation
-│   ├── AI_DECLARATION.md
-│   ├── CONTRIBUTING.md
-│   ├── DEPLOYMENT.md
-│   └── PANDUAN.md
 └── .github/                     # GitHub Actions workflows
     └── workflows/
         └── python-app.yml
