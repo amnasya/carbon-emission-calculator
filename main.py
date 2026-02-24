@@ -1,13 +1,13 @@
 # Carbon Emission Calculator - Main Interface
 # This module handles user interaction and orchestrates the calculation flow
 
-from maps_api import get_distance, get_alternative_routes
-from emission import calculate_emission, get_emission_factor, get_valid_combinations
-from visualization import create_emission_chart, create_comparison_bar_chart, display_chart_info
-from advisor import get_emission_advice
-from mlr_emission_predictor import MLREmissionPredictor, FeatureExtractor
-from route_comparator import RouteEmissionComparator
-from emission_formatter import EmissionFormatter
+from src.maps_api import get_distance, get_alternative_routes
+from src.emission import calculate_emission, get_emission_factor, get_valid_combinations
+from src.visualization import create_emission_chart, create_comparison_bar_chart, display_chart_info
+from src.advisor import get_emission_advice
+from src.mlr_emission_predictor import MLREmissionPredictor, FeatureExtractor
+from src.route_comparator import RouteEmissionComparator
+from src.emission_formatter import EmissionFormatter
 import logging
 
 # Configure logging

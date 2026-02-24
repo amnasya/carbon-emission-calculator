@@ -37,9 +37,9 @@ class MLREmissionPredictor:
     MODEL_VERSION = "1.0.0"
     
     def __init__(self, 
-                 model_path: str = 'mlr_emission_model.joblib',
-                 scaler_path: str = 'mlr_emission_scaler.joblib',
-                 encoder_path: str = 'mlr_emission_encoder.joblib'):
+                 model_path: str = 'models/mlr_emission_model.joblib',
+                 scaler_path: str = 'models/mlr_emission_scaler.joblib',
+                 encoder_path: str = 'models/mlr_emission_encoder.joblib'):
         """
         Initialize predictor and load trained model.
         
@@ -179,7 +179,7 @@ class MLREmissionPredictor:
         Load version information from model metadata or use default.
         """
         # Try to load version from feature info file
-        feature_info_path = 'mlr_feature_info.joblib'
+        feature_info_path = 'models/mlr_feature_info.joblib'
         if os.path.exists(feature_info_path):
             try:
                 feature_info = joblib.load(feature_info_path)
@@ -495,7 +495,7 @@ class MLREmissionPredictor:
         
         # Get feature names
         try:
-            feature_info_path = 'mlr_feature_info.joblib'
+            feature_info_path = 'models/mlr_feature_info.joblib'
             if os.path.exists(feature_info_path):
                 feature_info = joblib.load(feature_info_path)
                 feature_names = feature_info.get('all_feature_names', [])
@@ -625,7 +625,7 @@ class MLREmissionPredictor:
         
         # Get feature names
         try:
-            feature_info_path = 'mlr_feature_info.joblib'
+            feature_info_path = 'models/mlr_feature_info.joblib'
             if os.path.exists(feature_info_path):
                 feature_info = joblib.load(feature_info_path)
                 feature_names = feature_info.get('all_feature_names', [])

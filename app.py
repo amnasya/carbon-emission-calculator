@@ -5,18 +5,20 @@ Flask Web Application for Carbon Emission Calculator
 """
 
 from flask import Flask, render_template, request, jsonify
-from maps_api import get_alternative_routes
-from emission import calculate_emission, get_emission_factor, EMISSION_FACTORS
-from ml_predictor import (calculate_adjusted_emission, FuelConsumptionPredictor,
+from src.maps_api import get_alternative_routes
+from src.emission import calculate_emission, get_emission_factor, EMISSION_FACTORS
+from src.ml_predictor import (calculate_adjusted_emission, FuelConsumptionPredictor,
                           DRIVING_STYLE_MAP, TRAFFIC_MAP, WEATHER_MAP, 
                           ROAD_TYPE_MAP, AC_USAGE_MAP)
-from mlr_emission_predictor import MLREmissionPredictor, FeatureExtractor
-from route_comparator import RouteEmissionComparator
-from emission_formatter import EmissionFormatter
+from src.mlr_emission_predictor import MLREmissionPredictor, FeatureExtractor
+from src.route_comparator import RouteEmissionComparator
+from src.emission_formatter import EmissionFormatter
 import traceback
 import logging
 
-app = Flask(__name__)
+app = Flask(__name__, 
+            template_folder='src/templates',
+            static_folder='src/static')
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

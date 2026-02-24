@@ -121,7 +121,7 @@ def generate_training_data(n_samples=1000):
     return pd.DataFrame(data)
 
 
-def train_mlr_model(save_dir='.'):
+def train_mlr_model(save_dir='models'):
     """
     Train Multiple Linear Regression model and save artifacts
     

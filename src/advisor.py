@@ -123,7 +123,7 @@ Module Components:
 
 from typing import TypedDict, List, Optional, Union
 from dataclasses import dataclass
-from emission import EMISSION_FACTORS, get_emission_factor
+from src.emission import EMISSION_FACTORS, get_emission_factor
 
 
 # ============================================================================

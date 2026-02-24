@@ -21,8 +21,8 @@ class FuelConsumptionPredictor:
         self.model = None
         self.scaler = None
         self.is_trained = False
-        self.model_path = 'fuel_model.joblib'
-        self.scaler_path = 'fuel_scaler.joblib'
+        self.model_path = 'models/fuel_model.joblib'
+        self.scaler_path = 'models/fuel_scaler.joblib'
         
         # Try to load existing model
         self._load_model()

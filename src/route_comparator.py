@@ -6,8 +6,8 @@ Compare emissions across routes and select the best option
 """
 
 from typing import Dict, List, Optional, Callable
-from mlr_emission_predictor import MLREmissionPredictor, FeatureExtractor
-from emission_formatter import EmissionFormatter
+from src.mlr_emission_predictor import MLREmissionPredictor, FeatureExtractor
+from src.emission_formatter import EmissionFormatter
 import logging
 
 # Configure logging

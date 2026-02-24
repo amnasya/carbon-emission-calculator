@@ -54,20 +54,41 @@ Buka browser di `http://localhost:5000`
 ## Struktur Project
 
 ```
-├── main.py                      # CLI interface
 ├── app.py                       # Flask web application
-├── emission.py                  # Emission calculation logic
-├── maps_api.py                  # OpenStreetMap API integration
-├── mlr_emission_predictor.py    # ML emission predictor
-├── ml_predictor.py              # Fuel consumption predictor
-├── visualization.py             # Chart generation
-├── advisor.py                   # Emission reduction advisor
-├── route_comparator.py          # Route comparison logic
-├── emission_formatter.py        # Emission formatting utilities
-├── train_mlr_model.py           # ML model training script
-├── templates/                   # HTML templates
-├── static/                      # Static assets (CSS, JS)
-└── tests/                       # Unit tests
+├── main.py                      # CLI interface
+├── requirements.txt             # Python dependencies
+├── .env.template                # Environment variables template
+├── src/                         # Source code
+│   ├── __init__.py
+│   ├── emission.py              # Emission calculation logic
+│   ├── maps_api.py              # OpenStreetMap API integration
+│   ├── mlr_emission_predictor.py # ML emission predictor
+│   ├── ml_predictor.py          # Fuel consumption predictor
+│   ├── visualization.py         # Chart generation
+│   ├── advisor.py               # Emission reduction advisor
+│   ├── route_comparator.py      # Route comparison logic
+│   ├── emission_formatter.py    # Emission formatting utilities
+│   ├── train_mlr_model.py       # ML model training script
+│   ├── mlr_config.py            # ML configuration
+│   ├── mlr_config.example.json  # Example ML config
+│   ├── templates/               # HTML templates
+│   └── static/                  # Static assets (CSS, JS)
+├── models/                      # Trained ML models
+│   ├── mlr_emission_model.joblib
+│   ├── mlr_emission_scaler.joblib
+│   ├── mlr_emission_encoder.joblib
+│   ├── mlr_feature_info.joblib
+│   ├── fuel_model.joblib
+│   └── fuel_scaler.joblib
+├── tests/                       # Unit tests
+├── docs/                        # Documentation
+│   ├── AI_DECLARATION.md
+│   ├── CONTRIBUTING.md
+│   ├── DEPLOYMENT.md
+│   └── PANDUAN.md
+└── .github/                     # GitHub Actions workflows
+    └── workflows/
+        └── python-app.yml
 ```
 
 ## Testing
@@ -78,10 +99,11 @@ pytest tests/
 
 ## Model Files
 
-Model ML yang sudah dilatih:
+Model ML yang sudah dilatih (di folder `models/`):
 - `mlr_emission_model.joblib` - Model prediksi emisi
 - `mlr_emission_scaler.joblib` - Scaler untuk normalisasi data
 - `mlr_emission_encoder.joblib` - Encoder untuk kategori
+- `mlr_feature_info.joblib` - Informasi fitur model
 - `fuel_model.joblib` - Model konsumsi bahan bakar
 - `fuel_scaler.joblib` - Scaler untuk fuel model
 
