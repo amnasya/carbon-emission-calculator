@@ -1,17 +1,26 @@
-# Carbon Emission Calculator
+# Carbon Emission Calculator 🌍
 
-Aplikasi kalkulator emisi karbon untuk perjalanan kendaraan dengan dukungan Machine Learning dan visualisasi rute alternatif.
+> *Driving Towards a Greener Future* - Aplikasi cerdas untuk menghitung dan mengurangi emisi karbon dari perjalanan kendaraan Anda.
 
-## Fitur Utama
+## 📖 Tentang
 
-- 🚗 Perhitungan emisi karbon untuk berbagai jenis kendaraan (LCGC, SUV, EV)
-- 🗺️ Pencarian rute alternatif dengan OpenStreetMap
-- 🤖 Prediksi emisi menggunakan Machine Learning
-- 📊 Visualisasi grafik emisi dan perbandingan rute
-- 💡 Rekomendasi pengurangan emisi
-- 🌐 Interface web interaktif dengan Flask
+Carbon Emission Calculator adalah aplikasi berbasis web dan CLI yang membantu Anda memahami dampak lingkungan dari pilihan transportasi. Dengan teknologi Machine Learning dan integrasi real-time routing, aplikasi ini memberikan perhitungan emisi CO₂ yang akurat dan rekomendasi rute paling ramah lingkungan.
 
-## Instalasi
+**Mengapa Penting?**
+Transportasi berkontribusi sekitar 24% dari emisi CO₂ global. Dengan memilih rute dan kendaraan yang tepat, Anda dapat mengurangi jejak karbon hingga 20-30% per perjalanan.
+
+## ✨ Fitur Utama
+
+- 🚗 **Multi-Vehicle Support** - Perhitungan untuk LCGC, SUV, dan Electric Vehicle
+- 🗺️ **Smart Routing** - Pencarian rute alternatif dengan OpenStreetMap
+- 🤖 **AI-Powered Prediction** - Machine Learning untuk prediksi emisi akurat
+- 📊 **Visual Analytics** - Grafik interaktif dan perbandingan rute
+- 💡 **Smart Recommendations** - Saran praktis untuk mengurangi emisi
+- 🌐 **Dual Interface** - Web app modern dan CLI untuk automation
+- 📈 **Real-time Data** - Routing dan traffic data terkini
+- 🎯 **Zero Cost** - Gratis dan open source
+
+## 🚀 Quick Start
 
 1. Clone repository:
 ```bash
